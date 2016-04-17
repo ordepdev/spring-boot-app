@@ -5,3 +5,9 @@ machine:
 database:
   override:
     - mvn flyway:migrate
+    
+deployment:
+  dockerhub:
+    branch: master
+    commands:
+      - $DOCKER_HUB_TRIGGER  
