@@ -1,17 +1,4 @@
-FROM centos
-
-MAINTAINER ordepdev <pedrotavares.dev@gmail.com>
-
-RUN yum update -y && \
-yum install -y wget && \
-yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
-yum clean all
-
-# Set environment variables.
-ENV HOME /root
-
-# Define working directory.
-WORKDIR /root
-
-# Define default command.
-CMD ["bash"]
+FROM java:openjdk-8u45-jdk
+EXPOSE 8080
+CMD java -jar springboot-0.0.1-SNAPSHOT.jar
+ADD build/springboot-0.0.1-SNAPSHOT.jar .
