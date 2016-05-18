@@ -1,8 +1,8 @@
-com/ordepdev/springboot/controller/ShipwreckController.class
 META-INF/spring-configuration-metadata.json
+com/ordepdev/springboot/controller/HomeController.class
+com/ordepdev/springboot/config/PersistenceConfiguration.class
+com/ordepdev/springboot/controller/ShipwreckController.class
 com/ordepdev/springboot/repository/ShipwreckRepository.class
 com/ordepdev/springboot/App.class
-com/ordepdev/springboot/controller/HomeController.class
 com/ordepdev/springboot/controller/ShipwreckStub.class
-com/ordepdev/springboot/config/PersistenceConfiguration.class
 com/ordepdev/springboot/model/Shipwreck.class

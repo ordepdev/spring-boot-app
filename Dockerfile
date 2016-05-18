@@ -1,4 +1,5 @@
-FROM java:openjdk-8u45-jdk
+FROM java:8
 EXPOSE 8080
-CMD java -jar springboot-0.0.1-SNAPSHOT.jar
-ADD build/springboot-0.0.1-SNAPSHOT.jar .
+ADD target/springboot-0.0.1-SNAPSHOT.jar app.jar
+RUN bash -c 'touch /app.jar'
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=container","-jar","/app.jar"]
